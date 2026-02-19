@@ -3,8 +3,10 @@
   "wake_word": "hey nova",
   "author": "nick",
   "website": "https://www.home-assistant.io/voice-pe/",
-  "model": "hey_nova.tflite",
-  "trained_languages": ["en"],
+  "model": "https://raw.githubusercontent.com/zenoran/hey-nova-voice-pe-model/master/hey_nova.tflite",
+  "trained_languages": [
+    "en"
+  ],
   "version": 2,
   "micro": {
     "probability_cutoff": 0.97,
