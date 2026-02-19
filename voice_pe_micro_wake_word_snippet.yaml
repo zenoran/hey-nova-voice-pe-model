@@ -3,7 +3,7 @@
 
 micro_wake_word:
   models:
-    - model: https://raw.githubusercontent.com/<your-user>/<your-repo>/main/voice_pe_model/hey_nova.json
+    - model: https://raw.githubusercontent.com/zenoran/hey-nova-voice-pe-model/master/hey_nova.json
       id: hey_nova_model
   vad:
     model: github://esphome/micro-wake-word-models/models/v2/vad.json@main
