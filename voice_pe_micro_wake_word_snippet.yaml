@@ -1,0 +1,15 @@
+# Add this to your Voice PE ESPHome YAML (micro_wake_word section)
+# Replace the model URL with your hosted RAW json URL.
+
+micro_wake_word:
+  models:
+    - model: https://raw.githubusercontent.com/<your-user>/<your-repo>/main/voice_pe_model/hey_nova.json
+      id: hey_nova_model
+  vad:
+    model: github://esphome/micro-wake-word-models/models/v2/vad.json@main
+
+voice_assistant:
+  on_wake_word_detected:
+    then:
+      - voice_assistant.start:
+          wake_word: !lambda return wake_word;
