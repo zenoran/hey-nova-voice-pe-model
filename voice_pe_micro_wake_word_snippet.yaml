@@ -5,6 +5,8 @@ micro_wake_word:
   models:
     - model: https://raw.githubusercontent.com/zenoran/hey-nova-voice-pe-model/master/hey_nova.json
       id: hey_nova_model
+    - model: https://raw.githubusercontent.com/zenoran/hey-nova-voice-pe-model/master/hey_mira.json
+      id: hey_mira_model
   vad:
     model: github://esphome/micro-wake-word-models/models/v2/vad.json@main
 
