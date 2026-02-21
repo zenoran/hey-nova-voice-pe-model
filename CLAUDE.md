@@ -234,8 +234,8 @@ For standalone configs (like `home-assistant-voice.yaml`), add the model entry t
   "trained_languages": ["en"],
   "version": 2,
   "micro": {
-    "probability_cutoff": 0.5,
-    "sliding_window_size": 5,
+    "probability_cutoff": 0.7,
+    "sliding_window_size": 10,
     "feature_step_size": 10,
     "tensor_arena_size": 70000,
     "minimum_esphome_version": "2024.7"
